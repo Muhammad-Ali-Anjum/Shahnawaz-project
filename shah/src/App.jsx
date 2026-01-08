@@ -1,35 +1,43 @@
-import { useState } from 'react';
-import './App.css';
-import First from './Component/first';
-import Header from './Component/Header';
-import Footer from './Component/footer'
+import { useState } from "react";
+import "./App.css";
+import First from "./Component/First";
+import Header from "./Component/Header";
+import Footer from "./Component/footer";
+
 function App() {
   const [name, setName] = useState("sha");
 
-  const fun = (para) => {
-    setName(para);
+  // Update name
+  const updateName = (value) => {
+    setName(value);
   };
 
-  function product(){
-    return product;
-  }
+  // Product function (example)
+  const product = () => {
+    return "Laptop";
+  };
 
   return (
     <>
-    <Header names="ali" age="12"/>
-      <h1>Hello React {name}</h1>
-      <h1>Hello React {product}</h1>
+      {/* Modern Header with props */}
+      <Header names="Ali" age={12} />
 
+      <main className="app-container brand">
+        <h1>Hello React {name}</h1>
+        <h2>Product: {product()}</h2>
 
-      <First />
+        <First />
 
-      <button onClick={()=>fun("jee")}>Click Me</button>
-      <button onClick={product}>product</button>
+        <button onClick={() => updateName("jee")}>
+          Change Name
+        </button>
 
-      <Footer/>
-    
+        <button onClick={product}>
+          Show Product
+        </button>
+      </main>
 
-      
+      <Footer />
     </>
   );
 }
