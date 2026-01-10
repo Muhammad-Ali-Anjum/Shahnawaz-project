@@ -3,6 +3,8 @@ import "./App.css";
 import First from "./Component/First";
 import Header from "./Component/Header";
 import Footer from "./Component/footer";
+import Khp from "./Component/Khp";
+import Home from "./page/Home"
 
 function App() {
   const [name, setName] = useState("sha");
@@ -19,14 +21,17 @@ function App() {
 
   return (
     <>
+   
       {/* Modern Header with props */}
-      <Header names="Ali" age={12} />
+      {/* <Header names="Ali" age={12} />
+       <Khp/> */}
 
-      <main className="app-container brand">
+<Home/>
+      {/* <main className="app-container brand">
         <h1>Hello React {name}</h1>
-        <h2>Product: {product()}</h2>
+        <h2>Product: {product()}</h2> */}
 
-        <First />
+        {/* <First />
 
         <button onClick={() => updateName("jee")}>
           Change Name
@@ -35,11 +40,14 @@ function App() {
         <button onClick={product}>
           Show Product
         </button>
-      </main>
+      </main> */}
 
-      <Footer />
+      {/* <Footer /> */}
+    
     </>
   );
 }
 
 export default App;
+
+
