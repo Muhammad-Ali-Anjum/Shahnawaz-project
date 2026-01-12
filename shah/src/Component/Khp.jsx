@@ -1,8 +1,12 @@
 import React from 'react'
 
-function khp() {
+function khp({name,age}) {
   return (
-    <div>khp</div>
+ <>
+ <h1>Name :{name} </h1>
+ <h1>age :{age} </h1>
+ 
+ </>
   )
 }
 
