@@ -1,53 +1,30 @@
-import { useState } from "react";
-import "./App.css";
-import First from "./Component/First";
+import { Routes, Route } from "react-router-dom";
 import Header from "./Component/Header";
-import Footer from "./Component/footer";
-import Khp from "./Component/Khp";
-import Home from "./page/Home"
 
-function App() {
-  const [name, setName] = useState("sha");
+import Home from "./page/Home.jsx";
+import Courses from "./page/Courses.jsx";
+import About from "./page/About.jsx";
+import Contact from "./page/Contact.jsx";
+import Login from "./page/Login.jsx";
+import Footer from "./Component/footer.jsx";
 
-  // Update name
-  const updateName = (value) => {
-    setName(value);
-  };
 
-  // Product function (example)
-  const product = () => {
-    return "Laptop";
-  };
-
+const App = () => {
   return (
     <>
-   
-      {/* Modern Header with props */}
-      {/* <Header names="Ali" age={12} />
-       <Khp/> */}
+      <Header />
 
-<Home/>
-      {/* <main className="app-container brand">
-        <h1>Hello React {name}</h1>
-        <h2>Product: {product()}</h2> */}
-
-        {/* <First />
-
-        <button onClick={() => updateName("jee")}>
-          Change Name
-        </button>
-
-        <button onClick={product}>
-          Show Product
-        </button>
-      </main> */}
-
-      {/* <Footer /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+      <Footer/>
     
     </>
   );
-}
+};
 
 export default App;
-
-

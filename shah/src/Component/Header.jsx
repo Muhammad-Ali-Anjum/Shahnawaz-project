@@ -1,39 +1,37 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
-    <header className="lms-header">
-      <div className="lms-wrapper">
-        
+    <header className="header">
+      <div className="container">
         {/* Logo */}
-        <div className="lms-logo">
-          <span className="brand">Next Planner</span>
+        <NavLink to="/" className="logo" onClick={closeMenu}>
+          <span>Next Planner</span>
           <small>Academy</small>
-        </div>
+        </NavLink>
 
         {/* Navigation */}
-        <nav className={`lms-nav ${menuOpen ? "open" : ""}`}>
-          <a href="#home">Home</a>
-          <a href="#courses">Courses</a>
-          <a href="#instructors">Instructors</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-          <a href="#login" className="primary-btn">Login</a>
+        <nav className={`nav ${menuOpen ? "open" : ""}`}>
+          <NavLink to="/" onClick={closeMenu} className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
+          <NavLink to="/courses" onClick={closeMenu} className={({ isActive }) => isActive ? "active" : ""}>Courses</NavLink>
+          <NavLink to="/about" onClick={closeMenu} className={({ isActive }) => isActive ? "active" : ""}>About</NavLink>
+          <NavLink to="/contact" onClick={closeMenu} className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink>
+          <NavLink to="/login" onClick={closeMenu} className="btn">Login</NavLink>
         </nav>
 
-        {/* Mobile Menu */}
-        <div
-          className={`menu-toggle ${menuOpen ? "active" : ""}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+        {/* Hamburger */}
+        <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
         </div>
-
       </div>
     </header>
   );
