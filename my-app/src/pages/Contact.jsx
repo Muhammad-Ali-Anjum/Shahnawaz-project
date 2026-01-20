@@ -1,8 +1,18 @@
+import React from "react";
+import PageHero from "../components/PageHero.jsx";
 function Contact() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-5xl font-bold text-blue-600">Contact Page</h1>
-    </div>
+   <>
+   <div className="mt-20">
+    <PageHero
+  title="Get in Touch"
+  subtitle="We’re here to help you start your learning journey."
+  breadcrumb={["Home", "Contact"]}
+   
+/>
+</div>
+
+   </>
   );
 }
 
