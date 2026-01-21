@@ -9,8 +9,8 @@ function App() {
     <div className=''>
      {/* <Section1/>
       <Section2/> */}
-      <FeatureSections/>
-      {/* <FeatureSection/> */}
+      {/* <FeatureSections/> */}
+      <FeatureSection/>
     </div>
   )
 }

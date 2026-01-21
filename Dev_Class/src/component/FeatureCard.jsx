@@ -1,3 +1,4 @@
+
 export default function FeatureCard({ title, text, icon: Icon, image, gradient }) {
   return (
     <div className="group relative rounded-3xl overflow-hidden">
