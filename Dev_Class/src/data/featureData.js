@@ -109,4 +109,53 @@ export const featureData = [
     image: "/images/feature-3.jpg",
     icon: BarChart3,
   },
+  {
+    id: 3,
+    title: "High Performance",
+    description: "Optimized speed for modern scalable applications.",
+    image: "/images/feature-3.jpg",
+    icon: BarChart3,
+  },{
+    id: 3,
+    title: "High Performance",
+    description: "Optimized speed for modern scalable applications.",
+    image: "/images/feature-3.jpg",
+    icon: BarChart3,
+  },{
+    id: 3,
+    title: "High Performance",
+    description: "Optimized speed for modern scalable applications.",
+    image: "/images/feature-3.jpg",
+    icon: BarChart3,
+  },{
+    id: 3,
+    title: "High Performance",
+    description: "Optimized speed for modern scalable applications.",
+    image: "/images/feature-3.jpg",
+    icon: BarChart3,
+  },{
+    id: 3,
+    title: "High Performance",
+    description: "Optimized speed for modern scalable applications.",
+    image: "/images/feature-3.jpg",
+    icon: BarChart3,
+  },{
+    id: 3,
+    title: "High Performance",
+    description: "Optimized speed for modern scalable applications.",
+    image: "/images/feature-3.jpg",
+    icon: BarChart3,
+  },{
+    id: 3,
+    title: "High Performance",
+    description: "Optimized speed for modern scalable applications.",
+    image: "/images/feature-3.jpg",
+    icon: BarChart3,
+  },{
+    id: 3,
+    title: "High Performance",
+    description: "Optimized speed for modern scalable applications.",
+    image: "/images/feature-3.jpg",
+    icon: BarChart3,
+  },
 ];

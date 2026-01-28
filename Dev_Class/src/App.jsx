@@ -23,18 +23,32 @@
 
 
 
-import { FeatureProvider } from "./context/FeatureContext";
-import FeatureSection from "./Drlingovercom/FeatureSection";
+// import { FeatureProvider } from "./context/FeatureContext";
+// import FeatureSection from "./Drlingovercom/FeatureSection";
+
+
+// import React from 'react'
+
+// function App() {
+//   return (
+//     <div>
+//        <FeatureProvider>
+//       <FeatureSection />
+//     </FeatureProvider>
+//     </div>
+//   )
+// }
+
+// export default App
 
 
 import React from 'react'
+import From from './Form Handling/From'
 
 function App() {
   return (
     <div>
-       <FeatureProvider>
-      <FeatureSection />
-    </FeatureProvider>
+      <From/>
     </div>
   )
 }
