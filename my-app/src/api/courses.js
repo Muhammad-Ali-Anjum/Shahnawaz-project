@@ -364,7 +364,7 @@ export const courses = [
     level: "Beginner",
     price: 25,
     duration: "2 months",
-    instructor: "Sara Ali",
+    instructor: "Sara Ahmed",
     rating: 4.4,
     popularity: 70,
     createdAt: "2026-01-28",
