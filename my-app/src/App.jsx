@@ -78,9 +78,12 @@ function App() {
           <Route path="/" element={<Home />} />
 
           {/* Courses */}
-          <Route path="/courses" element={<Courses />} />
+          {/* <Route path="/courses" element={<Courses />} />
           <Route path="/courses/:categorySlug" element={<Courses />} />
-          <Route path="/courses/:slug" element={<CourseDetails />} />
+          <Route path="/courses/:slug" element={<CourseDetails />} /> */}
+           <Route path="/courses" element={<Courses />} />
+        <Route path="/courses/category/:categorySlug" element={<Courses />} />
+        <Route path="/courses/details/:slug" element={<CourseDetails />} />
 
           {/* Instructors */}
           <Route path="/instructors" element={<Instructors />} />
